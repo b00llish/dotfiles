@@ -33,6 +33,9 @@ ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
+echo "Adding autosuggestions."
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # change time zone
 echo "Changing timezone for zsh."
 sudo ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
