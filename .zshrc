@@ -13,5 +13,5 @@ source $ZSH/oh-my-zsh.sh
 eval `dircolors ~/.dircolors`
 
 # CM: add codespace vscode folder to path
-export PYTHONPATH="${CODESPACE_VSCODE_FOLDER}"
+export PYTHONPATH="${CODESPACE_VSCODE_FOLDER}:${PYTHONPATH}"
 alias zshconfig="code ~/.zshrc"
